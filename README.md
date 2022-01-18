@@ -1,7 +1,8 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/a8bby7581j4tnu3h/branch/master?svg=true)](https://ci.appveyor.com/project/stodoriko/autohw5-patterns2/branch/master)
 
-*Время, затраченное на ручное тестирование (минут): 5
-*Время, затраченное на автоматизацию (минут): 600
+Время, затраченное на ручное тестирование (минут): 5
+
+Время, затраченное на автоматизацию (минут): 600
 
 
 

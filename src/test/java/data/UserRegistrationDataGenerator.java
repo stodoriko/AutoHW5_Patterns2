@@ -47,4 +47,30 @@ public class UserRegistrationDataGenerator {
         registrationUsers(userData);
         return userData;
     }
+
+    public static UserRegistrationData generateValidBlocked() {
+        UserRegistrationData userData = new UserRegistrationData(faker.name().username(),
+                faker.internet().password(true), blockedStatus);
+        registrationUsers(userData);
+        return userData;
+    }
+
+    public static UserRegistrationData generateInvalidLogin() {
+        String password = faker.internet().password(true);
+        UserRegistrationData userDataRegistration = new UserRegistrationData(faker.name().username(),
+                password, activeStatus);
+        registrationUsers(userDataRegistration);
+        return new UserRegistrationData(faker.name().username(),
+                password, activeStatus);
+    }
+
+    public static UserRegistrationData generateInvalidPassword() {
+        String login = faker.name().username();
+        UserRegistrationData userDataRegistration = new UserRegistrationData(login,
+                faker.internet().password(true), activeStatus);
+        registrationUsers(userDataRegistration);
+        return new UserRegistrationData(login,
+                faker.internet().password(true), activeStatus);
+    }
+
 }

@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/lcwaax2s2qwu02f0/branch/test_mode?svg=true)](https://ci.appveyor.com/project/stodoriko/autohw5-patterns-1umu3/branch/test_mode)
+[![Build status](https://ci.appveyor.com/api/projects/status/a8bby7581j4tnu3h/branch/master?svg=true)](https://ci.appveyor.com/project/stodoriko/autohw5-patterns2/branch/master)
 
 # Домашнее задание к занятию «2.3. Patterns»
 

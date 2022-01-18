@@ -42,7 +42,7 @@ public class UserRegistrationTest {
     }
 
     @Test
-    void wrongPasswordTest() {
+    void failPasswordTest() {
         UserRegistrationData user = UserRegistrationDataGenerator.generateInvalidPassword();
         open("http://localhost:9999");
         $("[data-test-id=login] input").setValue(user.getLogin());
@@ -53,7 +53,7 @@ public class UserRegistrationTest {
     }
 
     @Test
-    void noPasswordTest() {
+    void withoutPasswordTest() {
         UserRegistrationData user = UserRegistrationDataGenerator.generateValidActive();
         open("http://localhost:9999");
         $("[data-test-id=login] input").setValue(user.getLogin());
